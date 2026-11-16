@@ -1,9 +1,11 @@
 name: test
 
+# Manual only: this account's GitHub Actions minutes are blocked by a billing
+# issue, so a push trigger would paint every commit red for reasons unrelated to
+# the code. Run it by hand (Actions → test → Run workflow) once billing is clear,
+# or flip `on:` to `push`/`pull_request` then.
 on:
-  push:
-    branches: [main]
-  pull_request:
+  workflow_dispatch:
 
 jobs:
   test:
