@@ -120,6 +120,12 @@ hermes plugins validate .
 - 法定节假日官方按空闲价，这里按周一至周五判断，节假日会**略微高估**
 - 非 CNY 账户会原样显示币种，不做汇率换算（换算出来的数字不如不显示）
 
+## 致谢
+
+- **Hermes Agent**（[Nous Research](https://nousresearch.com)）—— 共同作者（co-author）：插件骨架、余额与用量聚合、价目表与高峰时段折算、桌面芯片、37 个离线测试和这份文档，都是在与它的对话里一行行做出来的；桌面半区严格照着它的 plugin SDK 契约实现，仓库里的 commit 也带 `Co-authored-by` 署名。
+- DeepSeek 官方文档：价目表与 `/user/balance` 接口语义。
+- Hermes 的 `desktop-plugin-sdk.md`：一个包同时装两半（`dashboard/` + `desktop/`）的做法。
+
 ## English
 
 A Hermes Desktop status-bar plugin for DeepSeek: account balance, today's tokens,
