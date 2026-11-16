@@ -1,0 +1,13 @@
+{
+  "name": "deepseek-usage",
+  "label": "DeepSeek Usage",
+  "description": "Backend-only DeepSeek balance and usage collector for the Hermes Desktop status bar.",
+  "icon": "Graph",
+  "version": "0.1.0",
+  "tab": {
+    "path": "/deepseek-usage",
+    "hidden": true
+  },
+  "entry": "dist/index.js",
+  "api": "plugin_api.py"
+}

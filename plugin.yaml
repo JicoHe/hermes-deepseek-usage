@@ -1,0 +1,15 @@
+name: deepseek-usage
+label: DeepSeek Usage
+kind: standalone
+version: 1.0.0
+author: JicoHe
+homepage: https://github.com/JicoHe/hermes-deepseek-usage
+license: MIT
+tags: [deepseek, usage, cost, status-bar, desktop]
+description: |
+  DeepSeek account balance plus today's token and RMB cost, surfaced as a Hermes
+  Desktop status-bar chip. Queries DeepSeek's /user/balance endpoint with the key
+  from DEEPSEEK_API_KEY or ~/.codex/config.toml, and aggregates this machine's
+  state.db for today's usage. Cost is priced from DeepSeek's official RMB price
+  list, splitting peak and off-peak hours per session. No timers, no writes to
+  the transcript, and the API key never leaves the backend process.
